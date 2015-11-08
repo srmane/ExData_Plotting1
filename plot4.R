@@ -28,7 +28,7 @@ lines(hpcdata$DateTime, hpcdata$Voltage)
 ## Generate Sub Metering Plot
 plot(hpcdata$DateTime, hpcdata$Sub_metering_1,  
      pch = NA, xlab = "", ylab = 'Energy sub metering')
-lines(hpcdata$DateTime, hpcdata$Global_active_power)
+lines(hpcdata$DateTime, hpcdata$Sub_metering_1)
 lines(hpcdata$DateTime, hpcdata$Sub_metering_2, col='red')
 lines(hpcdata$DateTime, hpcdata$Sub_metering_3, col='blue')
 legend(x = hpcdata$DateTime[1950], y = 38.5, lty = c(1,1,1),
